@@ -8,12 +8,12 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class Repitions {
+public class Main {
    static BufferedReader br;
    static StringTokenizer st;
    static PrintWriter out;
 
-   public Repitions() {
+   public Main() {
    }
 
    static String next() throws IOException {
@@ -46,22 +46,7 @@ public class Repitions {
    }
 
    static void solve() throws IOException {
-      String input = nextLine();
-      int pairlength = 0;
-      int biggest = 0;
-      for(int i = 0; i< input.length() - 1; i++){
-         if(input.charAt(i) == input.charAt(i+1)){
-            pairlength += 1;  
-         }
-         if(pairlength > biggest){
-            int temp = pairlength;
-            biggest = temp;
-         }
-         if(input.charAt(i) != input.charAt(i+1)){
-            pairlength = 0;  
-         }
-      }
-      out.println(biggest+1);
+      
    }
 
    static {
